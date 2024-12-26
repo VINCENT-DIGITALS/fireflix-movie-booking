@@ -1,0 +1,229 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+    background: #000000;;
+ 
+}
+
+.container{
+    position: relative;
+    width: 100%;
+
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color:  #615e5e;
+    
+    grid-row: 1/-1;
+    display: flex;
+    text-align: right;
+
+}
+.logo{
+    position: sticky;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+
+}
+.logo img{
+    max-height: 100%;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+#menu{
+    position: absolute;
+    right: 0;
+    display: flex;
+    transform: translateY(60% ) translateX(-20%);
+}
+.items{
+    list-style: none;
+}
+.items .lg{
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10%;
+    height: 30px;
+    font-weight: bold;  
+}
+
+.lg:hover{
+    color: #f32b2b;
+}
+
+aside{
+    position: absolute;
+
+    width: 15%;
+    
+    
+    background-color:  #615e5e;
+    overflow: hidden;
+    overflow: auto;
+
+}
+
+.admin_prof{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden; 
+    background-color: #840000;
+}
+
+.admin_prof img{
+    margin: 11px;
+    width: 25%; /* to make the image fill the circle */
+  height: auto; /* to maintain the aspect ratio of the image */
+  display: block;
+}
+
+div p{
+    color: #FFFFFF;
+    margin-left: 10%;   
+    margin-top: 10%;
+}
+div p img{
+    width: 10px;
+    height: 10px;
+}
+.choice{
+    list-style-type: none;
+    padding: 10%;
+}
+ .choice a{
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: lighter;        
+}
+
+.choice a:hover{
+    color: #f32b2b;
+}
+
+.nestedchoice{
+    margin-top: 10%;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.content{
+    
+    margin: 2%  30% ;
+    width: max-content;
+    
+      
+}
+.display{
+    
+    
+    width: 100%;
+    background-color: #600000;
+    padding: 2%;
+    
+}
+
+.display table {
+    background-color: rgb(173, 52, 52);
+    
+    border-collapse: collapse;
+    overflow: auto;
+    text-align: center;
+}
+
+table tr{
+    overflow: hidden;
+    
+}
+table thead tr th{
+    border-bottom: 1px solid #840000;
+    padding: 10px;
+}
+.movies{
+    
+    border-right: 1px solid #840000;
+    border-bottom: 1px solid #840000;
+    
+    
+}
+table td{
+    
+    padding: 15px;
+}
+
+.long-text {
+    
+    max-width: 200px;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+
+.panel{
+    background-color: #f32b2b;
+    text-align: center;
+ }
+
+ #close-btn{
+    background-color: #555;
+    border-radius: 10%;
+    transition: 0.5s ease-in-out
+ }
+
+ #close-btn:hover{
+    background-color: aqua;
+    font-size: 0;
+     transition-duration: 0.5s;
+     transition:  0.5s ease-out;
+     content: 'Select a file';
+     color: #555;
+     border-radius: 4px;
+     padding: 6px 12px;
+     display: inline-block;
+     cursor: pointer;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.42857143;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
+
+
+ .display-poster{
+    
+    max-height: 150px ;
+    border-radius: 10%;
+    transition: 0.5s ease-in-out
+ }
+
+ .display-poster:hover{
+    transition-duration: 0.5s;
+    transition: 0.5s ease-in-out;
+    max-height: 300px;
+    border-radius: 10%;
+    
+ }
+ .archive_btn{
+    border-radius: 5;
+ }
+
+ .archive_btn:hover{
+    color: #de0a0a;
+    
+}
+
+.noshow{
+    right: 50%;
+}

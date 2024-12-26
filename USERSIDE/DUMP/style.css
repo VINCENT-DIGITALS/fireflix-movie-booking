@@ -1,0 +1,384 @@
+/* Start Style for seating*/
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: darkred;
+}
+
+.seat.sold {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-48deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(158, 248, 158);
+}
+
+/*END STYLE FOR SEATING*/
+
+
+/*Start style for contact*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(img/inma.jpg);
+	background-size: cover;
+
+}
+.contact .content{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h2{
+	font-size: 36px;
+	font-weight: 5000;
+	color: darkred;
+	text-transform: uppercase;
+	transform: translateY(-20px);
+
+}
+.contact .content p{
+
+	font-weight: 500;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container .ContactInfo{
+
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+
+}
+.container .ContactInfo .box{
+
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .ContactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.container .ContactInfo .box .text{
+	display:flex ;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container .ContactInfo .box .text h3{
+
+	font-weight: 500;
+	color: darkred;
+}
+.ContactForm{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.ContactForm h2{
+	font-size: 30px;
+	color: darkred;
+	font-weight: 500;
+}
+.ContactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.ContactForm .inputBox input,
+.ContactForm .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border:none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.ContactForm .inputBox span{
+
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+
+}
+.ContactForm .inputBox input:focus ~ span,
+.ContactForm .inputBox input:valid ~ span
+.ContactForm .inputBox textarea:focus ~ span,
+.ContactForm .inputBox textarea:valid ~ span
+{
+	color: darkred;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+/*END STYLE FOR CONTACT*/
+
+
+
+
+/*START STYLE FOR footer*/
+@import url(https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: black;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    background: darkred;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px;
+}
+.box .content{
+    margin: 20px 0 0 0;
+   
+    
+}
+.box .content p{
+    text-align: justify;
+}
+.left .content .social{
+    margin: 20px;
+    padding: 5px;
+    
+    
+}
+.left .content .social a{
+    padding: 0 2px;
+    color: black;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: darkred;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.3s;
+    transform: translate(1045px,110px);
+    margin: 1px 5px;
+}
+.left .content .social a span:hover{
+    background: black;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo{
+    height: 10px;
+    min-width: 10px;
+
+  }
+  .email{
+    color:white;
+    transform: translate(0, 10px);
+    
+  }
+  .email .text{
+    margin: 5px 4px;
+    
+  }
+  p{
+    color: white;
+  }
+  form{
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  form .far{
+    font-size: 18px;
+    margin-right: 0px;
+  }
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+
+/*END STYLE FOR FOOTER*/

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --primary: red;
+    --secondary: black;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+}
+
+
+nav{
+    display: flex !important;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    border: 1px solid black;
+    background-color:var(--secondary);
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.left{
+    margin: 0px 55px;
+}
+
+.left a{
+    color: #ddd;
+    padding: 35px 10px;
+    font-size: 22px;
+    transition: all 0.5s ease-in-out;
+}
+
+.left a:hover{
+    background-color: #ddd;
+    color: var(--secondary);
+
+}
+
+.right{
+    margin: 0px 55px;
+}
+
+
+.right a{
+    color: #ddd;
+    padding: 10px 10px;
+    font-size: 31px;
+    transition: all 0.5s ease-in-out;
+}
+
+.right a:hover{
+    color: red;
+
+}
+
+
+#carticon{
+    position: relative;
+}
+
+#cartcount{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: whitesmoke;
+    font-style: 12px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 100%;
+    top: 22px;
+    right: 211px;
+    position: absolute;
+    /* display: none; */
+}
+
+#table th h4{
+    text-align: center !important;
+    font-size: 26px !important;
+}
+.booking{
+
+    color: whitesmoke;
+    background-color: darkred;
+    text-align: center;
+    height: 80px;
+    padding: 20px;
+}

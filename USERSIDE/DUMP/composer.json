@@ -1,0 +1,9 @@
+{
+    "require": {
+        "dompdf/dompdf": "^2.0",
+        "mikehaertl/phpwkhtmltopdf": "^2.5",
+        "mpdf/mpdf": "^8.1",
+        "picqer/php-barcode-generator": "^2.2"
+        
+    }
+}
